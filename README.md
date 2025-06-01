@@ -24,7 +24,7 @@ Los hallazgos clave revelan picos de robo los viernes y en horas de alta afluenc
 
 ## Motivación
 
-El STC Metro es vital para la CDMX, transportando aproximadamente **3.8 millones** de pasajeros diariamente. El robo en este sistema afecta la seguridad y confianza de millones. Este análisis busca proveer insights basados en datos para informar estrategias de prevención más efectivas.
+El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones** de pasajeros diariamente. El robo en este sistema afecta la seguridad y confianza de millones. Este análisis busca proveer insights basados en datos para informar estrategias de prevención más efectivas.
 
 ## Fuentes de Datos Principales
 
