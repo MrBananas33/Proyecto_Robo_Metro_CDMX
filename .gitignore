@@ -1,0 +1,10 @@
+.DS_Store
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.env
+venv/
+.idea/
+Nootebooks/datos_brutos/carpetasFGJ_acumulado_2025_01.csv
+Nootebooks/datos_brutos/Afluencia_metro-2025-05-18.csv
+Visualizaciones/robos_asignados_a_estaciones_metro.csv
