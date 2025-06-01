@@ -5,7 +5,7 @@
 **Fecha:** 31 de mayo de 2025
 
 <!-- Opcional: Imagen de Portada/Banner -->
-<!-- ![Banner del Proyecto](path/to/your/banner_image.png) -->
+ ![Banner del Proyecto](Visualizaciones/banner_image.png) 
 
 ## Resumen del Proyecto
 
