@@ -103,6 +103,6 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
 
 ## Licencia
 
-Este proyecto se comparte bajo la Licencia [ELIGE UNA LICENCIA, ej. MIT License o Creative Commons Attribution 4.0 International License].
+Este proyecto se comparte bajo la Licencia: MIT License.
 
 ---
