@@ -4,8 +4,13 @@
 **Afiliación:** Universidad Nacional Rosario Castellanos, Grupo 202, Ciencia de Datos para Negocios
 **Fecha:** 31 de mayo de 2025
 
+<!-- Destacar el Paper PDF -->
+Consulta el informe completo y detallado del proyecto aquí:
+
+[![Ver Paper Completo](https://img.shields.io/badge/Ver%20Paper%20Completo-2196F3?style=flat-square&logo=read-the-docs)](./Paper_Robo_STC_Metro.pdf)
+
 <!-- Opcional: Imagen de Portada/Banner -->
- ![Banner del Proyecto](Visualizaciones/banner_image.png) 
+![Banner del Proyecto](Visualizaciones/banner_image.png)
 
 ## Resumen del Proyecto
 
@@ -30,7 +35,7 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
 
 *   **Carpetas de Investigación FGJCDMX:** (2016 - Oct 2024) - `carpetasFGJ_acumulado_2025_01.csv` del [Portal de Datos Abiertos CDMX](https://datos.cdmx.gob.mx/dataset/carpetas-de-investigacion-fgj-de-la-ciudad-de-mexico).
 *   **Afluencia STC Metro:** (2010 - Abr 2025) - `Afluencia_metro-2025-05-18.csv` del [Portal de Datos Abiertos CDMX](https://datos.cdmx.gob.mx/dataset/afluencia-diaria-del-metro-cdmx).
-*   **Geometrías Estaciones Metro:** `stcmetro_shp.zip` de SEMOVI / [Portal de Datos Abiertos CDMX]([URL si la tienes, o buscar "líneas y estaciones metro"]).
+*   **Geometrías Estaciones Metro:** `stcmetro_shp.zip` de SEMOVI / [Portal de Datos Abiertos CDMX](https://datos.cdmx.gob.mx/dataset/lineas-y-estaciones-del-stc-metro).
 *   **Geometrías Alcaldías CDMX:** `poligonos_alcaldias_cdmx.zip` del [Portal de Datos Abiertos CDMX](https://datos.cdmx.gob.mx/dataset/alcaldias).
 *   **Coeficiente de Gini (2020):** `GiniMunicipios2010_2015_2020.xlsx` de [CONEVAL](https://www.coneval.org.mx/Medicion/Paginas/Cohesion_Social.aspx).
 *   **Índice de Rezago Social (2020):** `IRS_localidades_2020.xlsx` de [CONEVAL](https://www.coneval.org.mx/Medicion/Documents/IRS_2020/IRS_loc_2000_2020.zip) (agregado a nivel municipal).
@@ -78,7 +83,7 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
 2.  **Intervenciones CPTED en Estaciones Críticas:** Mejorar diseño ambiental (espejos, vallas, iluminación).
 3.  **Fortalecimiento de Transparencia y Auditoría:** Incrementar la rendición de cuentas en la gestión del Metro.
 
-*(Ver el paper completo en la carpeta `/paper/` para detalles de las propuestas).*
+**Para más detalles sobre la metodología, resultados y propuestas, consulta el paper completo.**
 
 ## Estructura del Repositorio
 
@@ -104,5 +109,3 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
 ## Licencia
 
 Este proyecto se comparte bajo la Licencia: MIT License.
-
----
