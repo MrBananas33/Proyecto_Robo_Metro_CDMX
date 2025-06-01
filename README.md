@@ -17,10 +17,10 @@ Los hallazgos clave revelan picos de robo los viernes y en horas de alta afluenc
 
 <!-- Elige 1 o 2 de tus GIFs o gráficas más impactantes -->
 **Evolución Anual de la Tasa de Robo por Pasajero por Estación (2016-2024):**
-![Evolución Tasa de Robo](visualizations/evolucion_tasa_robo_metro_estacion_anual.gif)
+![Evolución Tasa de Robo](Visualizaciones/evolucion_tasa_robo_metro_estacion_anual.gif)
 
 **Robos por Modalidad de Transporte y Tipo de Violencia (2016-2024):**
-![Violencia por Modalidad](visualizations/violencia_por_modalidad_transporte.png)
+![Violencia por Modalidad](Visualizaciones/violencia_por_modalidad_transporte.png)
 
 ## Motivación
 
@@ -57,19 +57,19 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **[TU PROMEDIO
 ## Resultados Principales
 
 *   **Patrones Temporales:** Pico de robos en Metro en 2018; caída en 2020 (pandemia) y recuperación parcial. Picos horarios a las 7-9 AM y 18-20 PM, y los días viernes.
-    *   ![Frecuencia Robos Metro por Hora](visualizations/hist_frecuencia_robos_metro_hora.png)
+    *   ![Frecuencia Robos Metro por Hora](Visualizaciones/hist_frecuencia_robos_metro_hora.png)
 *   **Violencia:** Mayoría de robos en Metro son sin violencia (91.5%), en contraste con otros transportes como "Otro Vehículo Transporte" (90.6% con violencia).
 *   **Geografía del Delito:**
     *   Alcaldía Cuauhtémoc concentra la mayor parte de robos en Metro.
-        *   ![Top 7 Alcaldías](visualizations/top7_alcaldias_transporte_agrupado_pct_metro.png)
+        *   ![Top 7 Alcaldías](Visualizaciones/top7_alcaldias_transporte_agrupado_pct_metro.png)
     *   Estaciones con más robos absolutos: Hidalgo, Pino Suárez, Pantitlán.
-        *   ![Top 10 Estaciones Absolutos](visualizations/top_10_estaciones_robos_absolutos.png)
+        *   ![Top 10 Estaciones Absolutos](Visualizaciones/top_10_estaciones_robos_absolutos.png)
     *   Estaciones con mayor tasa de robo/afluencia (riesgo relativo): Hidalgo, Guerrero, Balderas.
-        *   ![Top 10 Estaciones Tasa](visualizations/top_10_estaciones_tasa_robo.png)
+        *   ![Top 10 Estaciones Tasa](Visualizaciones/top_10_estaciones_tasa_robo.png)
 *   **Afluencia:** Positivamente correlacionada con robos (r=0.513), explica ~26.3% de la varianza de robos diarios.
-    *   ![Robos vs Afluencia](visualizations/scatter_robos_vs_afluencia_total.png)
+    *   ![Robos vs Afluencia](Visualizaciones/scatter_robos_vs_afluencia_total.png)
 *   **Modelo Prophet:** MAE de ~1.31 robos diarios. Captura tendencias y estacionalidades.
-    *   ![Predicción Prophet](visualizations/prediccion_prophet_final_log_revertida.png)
+    *   ![Predicción Prophet](Visualizaciones/prediccion_prophet_final_log_revertida.png)
 *   **Análisis Socioeconómico Espacial (Alcaldía 2020):** No se encontró correlación global fuerte ni patrones LISA dominantes entre robos en Metro y Gini/IRS.
 
 ## Propuestas
