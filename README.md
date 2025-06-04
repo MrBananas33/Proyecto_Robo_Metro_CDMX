@@ -1,10 +1,12 @@
 # El Crimen Bajo la Lupa: Desentrañando los Robos en el Metro CDMX con Ciencia de Datos
 
-Link precentación del Blog: https://gamma.app/docs/El-Crimen-Bajo-la-Lupa-q5hv1dlvmoq6qvt?mode=doc
+[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/) [![Pandas](https://img.shields.io/badge/pandas-✔-green.svg)](https://pandas.pydata.org/) [![GeoPandas](https://img.shields.io/badge/geopandas-✔-green.svg)](https://geopandas.org/) [![Prophet](https://img.shields.io/badge/prophet-✔-blue.svg)](https://facebook.github.io/prophet/) [![Matplotlib](https://img.shields.io/badge/matplotlib-✔-orange.svg)](https://matplotlib.org/) [![Seaborn](https://img.shields.io/badge/seaborn-✔-purple.svg)](https://seaborn.pydata.org/) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-**Autores:** Arian Pedroza, Edgar Godinez, Miguel Cuellar
-**Afiliación:** Universidad Nacional Rosario Castellanos, Grupo 202, Ciencia de Datos para Negocios
-**Fecha:** 31 de mayo de 2025
+[Link presentación del Blog](https://gamma.app/docs/El-Crimen-Bajo-la-Lupa-q5hv1dlvmoq6qvt?mode=doc)
+
+> **Autores:** Arian Pedroza, Edgar Godinez, Miguel Cuellar
+> **Afiliación:** Universidad Nacional Rosario Castellanos, Grupo 202, Ciencia de Datos para Negocios
+> **Fecha:** 31 de mayo de 2025
 
 <!-- Destacar el Paper PDF -->
 Consulta el informe completo y detallado del proyecto aquí:
@@ -18,7 +20,19 @@ Consulta el informe completo y detallado del proyecto aquí:
 
 Este proyecto realiza un análisis exhaustivo del delito de robo en el Sistema de Transporte Colectivo (STC) Metro de la Ciudad de México, utilizando datos de carpetas de investigación de la FGJCDMX (2016-2024), datos de afluencia del Metro, información geográfica y socioeconómica. Aplicamos Análisis Exploratorio de Datos (EDA) para identificar patrones temporales y espaciales, modelado predictivo con Facebook Prophet (incluyendo regresores como afluencia y pandemia), y análisis de autocorrelación espacial (LISA) para explorar la relación entre robos a nivel alcaldía e indicadores socioeconómicos (Gini, IRS).
 
-Los hallazgos clave revelan picos de robo los viernes y en horas de alta afluencia (7-9 AM, 18-20 PM), una concentración en alcaldías centrales (Cuauhtémoc destacada), y que la mayoría de los robos en Metro son sin violencia (91.5%). El modelo Prophet predijo robos diarios con un MAE de ~1.31. No se encontró una correlación global fuerte entre robos y Gini/IRS a nivel alcaldía. Se proponen estrategias de patrullaje predictivo, rediseño ambiental (CPTED) y fortalecimiento de la transparencia.
+**Hallazgos Clave:**
+
+*   **Patrones Temporales:** Picos de robo los viernes y en horas de alta afluencia (7-9 AM, 18-20 PM).
+*   **Concentración Geográfica:** Mayor incidencia en alcaldías centrales, destacando Cuauhtémoc.
+*   **Naturaleza del Delito:** La mayoría de los robos en Metro son sin violencia (91.5%).
+*   **Modelado Predictivo:** El modelo Prophet logró predecir robos diarios con un Error Absoluto Medio (MAE) de ~1.31.
+*   **Correlación Socioeconómica:** No se encontró una correlación global fuerte entre robos y los indicadores Coeficiente de Gini o Índice de Rezago Social (IRS) a nivel alcaldía.
+
+**Propuestas Derivadas:**
+
+*   Estrategias de patrullaje predictivo.
+*   Rediseño ambiental basado en CPTED (Prevención del Delito Mediante el Diseño Ambiental).
+*   Fortalecimiento de la transparencia y auditoría en la gestión.
 
 ## Visualizaciones Destacadas
 
@@ -52,14 +66,14 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
     *   Análisis de modalidad de violencia por tipo de transporte.
     *   Correlación robos vs. afluencia.
 3.  **Modelado Predictivo (Facebook Prophet):**
-    *   Serie de robos diarios en Metro (transformación logarítmica).
-    *   Regresores: Afluencia diaria, indicador de pandemia.
-    *   Entrenamiento, predicción y evaluación (MAE, RMSE, MAPE).
-    *   Análisis de componentes y residuos del modelo.
+    *   Modelado de serie de tiempo de robos diarios en Metro (con transformación logarítmica para estabilizar la varianza).
+    *   Inclusión de regresores externos: afluencia diaria e indicador de pandemia COVID-19.
+    *   Proceso estándar de entrenamiento, predicción y evaluación de métricas (MAE, RMSE, MAPE).
+    *   Análisis de componentes del modelo (tendencia, estacionalidades anuales/semanales) y diagnóstico de residuos.
 4.  **Análisis de Autocorrelación Espacial (Nivel Alcaldía, 2020):**
-    *   Cálculo de Moran Global para robos en Metro.
-    *   LISA univariado para robos en Metro.
-    *   LISA bivariado: (Robos vs. Gini) y (Robos vs. IRS).
+    *   Cálculo del Índice de Moran Global para evaluar la autocorrelación espacial general de los robos en Metro.
+    *   Análisis de Indicadores Locales de Asociación Espacial (LISA) univariado para identificar clústeres de robos en Metro (utilizando contigüidad tipo Queen).
+    *   Análisis LISA bivariado para explorar la relación espacial entre robos y el Coeficiente de Gini, y entre robos y el Índice de Rezago Social (IRS).
 
 ## Resultados Principales
 
@@ -75,15 +89,15 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
         *   ![Top 10 Estaciones Tasa](Visualizaciones/top_10_estaciones_tasa_robo.png)
 *   **Afluencia:** Positivamente correlacionada con robos (r=0.513), explica ~26.3% de la varianza de robos diarios.
     *   ![Robos vs Afluencia](Visualizaciones/scatter_robos_vs_afluencia_total.png)
-*   **Modelo Prophet:** MAE de ~1.31 robos diarios. Captura tendencias y estacionalidades.
+*   **Modelo Prophet:** El modelo predictivo alcanzó un Error Absoluto Medio (MAE) de ~1.31 robos diarios en el conjunto de prueba, capturando adecuadamente tendencias y estacionalidades.
     *   ![Predicción Prophet](Visualizaciones/prediccion_prophet_final_log_revertida.png)
 *   **Análisis Socioeconómico Espacial (Alcaldía 2020):** No se encontró correlación global fuerte ni patrones LISA dominantes entre robos en Metro y Gini/IRS.
 
 ## Propuestas
 
-1.  **Patrullaje Predictivo y Adaptativo:** Usar patrones y predicciones para focalizar la seguridad.
-2.  **Intervenciones CPTED en Estaciones Críticas:** Mejorar diseño ambiental (espejos, vallas, iluminación).
-3.  **Fortalecimiento de Transparencia y Auditoría:** Incrementar la rendición de cuentas en la gestión del Metro.
+1.  **Implementación de Estrategias de Patrullaje Predictivo y Adaptativo:** Utilizar los patrones temporoespaciales identificados y las predicciones del modelo para optimizar la asignación de recursos de seguridad en horarios y estaciones críticas.
+2.  **Adopción de Medidas de Prevención del Delito Mediante el Diseño Ambiental (CPTED) en Estaciones Clave:** Rediseñar o mejorar elementos ambientales en estaciones de alto riesgo (ej. mejor iluminación, instalación de espejos convexos en puntos ciegos, reubicación de barreras o vallas) para disuadir la actividad delictiva.
+3.  **Fortalecimiento de la Transparencia y los Mecanismos de Auditoría:** Promover una mayor rendición de cuentas en la gestión operativa y de seguridad del STC Metro, publicando datos relevantes y facilitando la supervisión ciudadana.
 
 **Para más detalles sobre la metodología, resultados y propuestas, consulta el paper completo.**
 
@@ -98,7 +112,7 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
 ## Cómo Replicar el Análisis
 
 1.  Clonar este repositorio.
-2.  Asegurar tener Python 3.x y las librerías listadas en (próximamente) `requirements.txt` (principales: pandas, geopandas, matplotlib, seaborn, prophet, scipy, libpysal, esda).
+2.  Asegurar tener Python 3.x y las librerías listadas en `requirements.txt`. Puedes instalarlas usando: `pip install -r requirements.txt`.
 3.  Descargar los archivos de datos de las fuentes listadas y colocarlos en `data/raw/` (si no están ya en el repo).
 4.  Ejecutar el notebook `notebooks/EDA_Analisis_Robo_Metro.ipynb`. Las visualizaciones se guardarán en `visualizations/`.
 
@@ -107,6 +121,22 @@ El STC Metro es vital para la CDMX, transportando aproximadamente **3.2 millones
 *   Modelos predictivos más avanzados (LSTM, GNN, ST-Cokriging).
 *   Análisis espacial a escala más fina (micro-hotspots).
 *   Incorporación de más variables (eventos, clima).
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este análisis, encuentras algún error, o quieres proponer nuevas funcionalidades o visualizaciones, por favor considera lo siguiente:
+
+*   **Reporte de Errores (Issues):** Si encuentras un bug o un error en el análisis o en los datos, por favor abre un "Issue" en este repositorio detallando el problema.
+*   **Sugerencias de Mejoras:** Para sugerencias sobre nuevas características o mejoras a las existentes, también puedes abrir un "Issue" describiendo tu propuesta.
+*   **Pull Requests:** Si deseas contribuir directamente con código, correcciones o mejoras en la documentación, puedes hacer un "Fork" del repositorio y enviar un "Pull Request" con tus cambios. Por favor, asegúrate de que tu código siga un estilo consistente y esté bien comentado.
+
+Agradecemos de antemano cualquier aporte para hacer este proyecto más robusto y útil.
+
+## Contacto
+
+Si tienes preguntas específicas sobre el proyecto o deseas discutir alguna colaboración, puedes ponerte en contacto con los autores (información de contacto pendiente de ser añadida por los autores).
+
+Alternativamente, puedes abrir un "Issue" en este repositorio para preguntas técnicas o discusiones públicas sobre el análisis.
 
 ## Licencia
 
