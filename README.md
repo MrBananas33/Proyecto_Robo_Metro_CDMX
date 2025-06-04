@@ -1,5 +1,7 @@
 # El Crimen Bajo la Lupa: Desentrañando los Robos en el Metro CDMX con Ciencia de Datos
 
+Link precentación del Blog: https://gamma.app/docs/El-Crimen-Bajo-la-Lupa-q5hv1dlvmoq6qvt?mode=doc
+
 **Autores:** Arian Pedroza, Edgar Godinez, Miguel Cuellar
 **Afiliación:** Universidad Nacional Rosario Castellanos, Grupo 202, Ciencia de Datos para Negocios
 **Fecha:** 31 de mayo de 2025
