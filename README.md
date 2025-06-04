@@ -3,7 +3,7 @@
 [![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/) [![Pandas](https://img.shields.io/badge/pandas-✔-green.svg)](https://pandas.pydata.org/) [![GeoPandas](https://img.shields.io/badge/geopandas-✔-green.svg)](https://geopandas.org/) [![Prophet](https://img.shields.io/badge/prophet-✔-blue.svg)](https://facebook.github.io/prophet/) [![Matplotlib](https://img.shields.io/badge/matplotlib-✔-orange.svg)](https://matplotlib.org/) [![Seaborn](https://img.shields.io/badge/seaborn-✔-purple.svg)](https://seaborn.pydata.org/) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 [Link presentación del Blog](https://gamma.app/docs/El-Crimen-Bajo-la-Lupa-q5hv1dlvmoq6qvt?mode=doc)
-/
+|
 [Proyecto en Google Colab](https://colab.research.google.com/drive/1-pMn6jTJ-cLo0dm_l7p4y00qUA1k9ItC?usp=drive_link)
 
 > **Autores:** Arian Pedroza, Edgar Godinez, Miguel Cuellar
