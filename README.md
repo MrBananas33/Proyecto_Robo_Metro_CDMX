@@ -13,7 +13,7 @@
 <!-- Destacar el Paper PDF -->
 Consulta el informe completo y detallado del proyecto aquí:
 
-[![Ver Paper Completo](https://img.shields.io/badge/Ver%20Paper%20Completo-2196F3?style=flat-square&logo=read-the-docs)](./Reporte_Robo_STC_Metro.pdf)
+[![Ver Reporte Completo](https://img.shields.io/badge/Ver%20Paper%20Completo-2196F3?style=flat-square&logo=read-the-docs)](./Reporte_Robo_STC_Metro.pdf)
 
 <!-- Opcional: Imagen de Portada/Banner -->
 ![Banner del Proyecto](Visualizaciones/banner_image.png)
