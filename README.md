@@ -11,7 +11,7 @@
 > **Fecha:** 31 de mayo de 2025
 
 <!-- Destacar el Paper PDF -->
-Consulta el informe completo y detallado del proyecto aquí:
+Consulta el informe completo y detallado del proyecto aquí: 
 
 [![Ver Reporte Completo](https://img.shields.io/badge/Ver%20Paper%20Completo-2196F3?style=flat-square&logo=read-the-docs)](./Reporte_Robo_STC_Metro.pdf)
 
