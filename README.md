@@ -136,7 +136,7 @@ Agradecemos de antemano cualquier aporte para hacer este proyecto más robusto y
 
 ## Contacto
 
-Si tienes preguntas específicas sobre el proyecto o deseas discutir alguna colaboración, puedes ponerte en contacto con los autores (información de contacto pendiente de ser añadida por los autores).
+Si tienes preguntas específicas sobre el proyecto o deseas discutir alguna colaboración, puedes ponerte en contacto con los autores abriendo una sección de issues.
 
 Alternativamente, puedes abrir un "Issue" en este repositorio para preguntas técnicas o discusiones públicas sobre el análisis.
 
